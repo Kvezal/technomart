@@ -23,13 +23,15 @@
       </div>
       <div class="store-info">
         <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="contact-tel">+7 (812) 555-05-55</p>
-        <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <div class="header-contacts">
+          <p class="contact-tel">+7 (812) 555-05-55</p>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <div class="login">Войти</div>
         <div class="registration">Регистрация</div>
       </div>
       
-      <nav class="main-naigation">
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="nav-item">
             <a class="nav-link" href="#">Главная</a>
@@ -56,8 +58,8 @@
       </nav>
     </header>
     
-    <main class="main-container">
-      <section class="promo">
+    <main>
+      <section class="promo clearfix">
         <div class="promo-item">
           <h2 class="promo-title">Материалы</h2>
           <a class="btn" href="#">На любой вкус</a>
@@ -74,8 +76,8 @@
         <div class="slider">
           <a class="prev">Назад</a>
           <a class="next">Вперед</a>
-          <input type="checkbox" name="toggle" id="btn-1">
-          <input type="checkbox" name="toggle" id="btn-2">
+          <input type="radio" name="toggle" id="btn-1">
+          <input type="radio" name="toggle" id="btn-2">
           
           <section class="slider-control">
             <label for="btn-1"></label>
@@ -110,7 +112,7 @@
       </section>
       
       <section class="catalog-popular">
-        <div class="popular-item">
+        <div class="popular-header">
           <h2 class="subtitle">Популярные товары:</h2>
           <a class="btn-popular">Все популярные товары</a>
         </div>
@@ -159,18 +161,18 @@
       </section>
       
       <section class="manufacturers">
-        <div class="popular-item">
+        <div class="popular-header">
           <h2 class="subtitle">Популярные производители:</h2>
           <a class="btn-popular">Все производители</a>
         </div>
-        <a class="manuf-link" href="#"><img src="" alt="Bosch"></a>
-        <a class="manuf-link" href="#"><img src="" alt="Makita"></a>
-        <a class="manuf-link" href="#"><img src="" alt="DeWalt"></a>
-        <a class="manuf-link" href="#"><img src="" alt="Интерскол"></a>
-        <a class="manuf-link" href="#"><img src="" alt="Hitachi"></a>
-        <a class="manuf-link" href="#"><img src="" alt="LG"></a>
-        <a class="manuf-link" href="#"><img src="" alt="AEG"></a>
-        <a class="manuf-link" href="#"><img src="" alt="Metabo"></a>        
+        <a class="manufacturer-link" href="#"><img src="" alt="Bosch"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="Makita"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="DeWalt"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="Интерскол"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="Hitachi"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="LG"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="AEG"></a>
+        <a class="manufacturer-link" href="#"><img src="" alt="Metabo"></a>        
       </section>
       
       <section class="services">
@@ -196,13 +198,13 @@
             </li>
           </ul>
           
-          <section class="">
+          <section class="service-slide">
             <h2 class="service-title">Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
             </p>
           </section>
-          <section class="">
+          <section class="service-slide">
             <h2 class="service-title">Гарантия</h2>
             <p>
               Если купленный у нас товар поломается или заискрит,<br>
@@ -212,7 +214,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </section>
-          <section class="">
+          <section class="service-slide">
             <h2 class="service-title">Кредит</h2>
             <p>
               Залезть в долговую яму стало проще!<br>
@@ -293,7 +295,7 @@
         </ul>       
       </section>
       <section class="footer-contacts">
-        <p class="copyright">
+        <p class="footer-text copyright">
           © 2010–2017 Компания «Техномарт»
           Все права защищены
         </p>
@@ -302,11 +304,11 @@
           <a class="social-btn social-btn-fb" href="#"></a>
           <a class="social-btn social-btn-inst" href="#"></a>
         </section>
-        <p>
+        <p class="footer-text">
           Обратная связь:
           <a class="feedback" href="#">mail@htmlacademy.ru</a>
         </p>
-        <p>
+        <p class="footer-text">
           Разработано —
           <a class="developer">htmlacademy.ru</a>
         </p>

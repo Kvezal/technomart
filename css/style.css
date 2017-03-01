@@ -1,0 +1,480 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #000000;
+}
+
+.clearfix::after {
+  content: "";
+  
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  min-width: 1200px;
+  min-height: 320px;
+}
+
+.store-navigation {
+  display: flex;
+  justify-content: center;
+  min-height: 42px;
+}
+
+.store-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 940px;
+  min-height: 158px;
+  margin: 0 auto;
+  padding: 46px 0 54px;
+}
+
+.header-text {
+  width: 200px;
+  margin: 0;
+}
+
+.header-contacts {
+  width: 270px;
+}
+
+.login {
+  width: 121px;
+}
+
+.registration {
+  width: 150px;
+}
+
+.main-navigation {
+  width: 940px;
+  min-height: 60px;
+  margin: 0 auto 60px;
+}
+
+.site-navigation {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.promo {
+  width: 940px;
+  margin: 59px auto 0;
+}
+
+.promo-item {
+  float: left;
+  width: 300px;
+  min-height: 123px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.promo-item:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.promo-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.slider {
+  float: left;
+  width: 620px;
+  height: 266px;
+}
+
+.catalog-popular {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 53px auto 0;
+}
+
+.popular-header {
+  width: 940px;
+  min-height: 89px;
+}
+
+.catalog-item {
+  box-sizing: border-box;
+  width: 220px;
+  height: 318px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:last-of-type {
+  margin-right: 0;
+}
+
+.manufacturers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 20px auto 0;
+}
+
+.manufacturer-link {
+  width: 220px;
+  height: 145px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.manufacturer-link:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.services {
+  width: 940px;
+  margin: 85px auto 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 400px;
+  padding-top: 68px;
+  margin-bottom: 70px;
+}
+
+.service-slider {
+  display: flex;
+  padding-bottom: 102px;
+}
+
+.services-list {
+  width: 240px;
+  min-height: 183px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.service-slide {
+  width: 280px;
+  min-height: 183px;
+}
+
+.info {
+  display: flex;
+  box-sizing: border-box;
+  width: 940px;
+  margin: 0 auto;
+  padding: 80px 0 86px;  
+}
+
+.features {
+  width: 540px;
+  height: 370px;
+}
+
+.contacts {
+  width: 300px;
+  height: 370px;
+  margin-left: auto;
+}
+
+/*начало catalog.html*/
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.title {
+  width: 100%;
+}
+
+.filter-form {
+  width: 220px;
+  margin-right: auto;
+}
+
+.right-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  padding-bottom: 60px;
+}
+
+.sorting {
+  width: 100%;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.catalog-item {
+  width: 220px;
+  height: 318px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-top: 52px;
+}
+
+
+/*конец catalog.html*/
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-navigation,
+.footer-info {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer-nav-list {
+  display: flex;
+  margin: 0;
+  margin-left: 170px;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.footer-info {
+  min-height: 130px;
+}
+
+.footer-address {
+  width:  380px;
+  margin: 0;
+}
+
+.footer-subnav {
+  display: flex;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.footer-text {
+  width: 140px;
+  margin: 0;
+  margin-left: 20px;  
+}
+
+.footer-text:last-of-type {
+  margin-right: auto;
+}
+
+.footer-contacts {
+  display: flex;
+}
+
+.copyright {
+  width: 240px;
+  margin-left: auto;
+}
+
+.footer-social {
+  width: 230px;
+  margin-left: 150px;
+}
+
+
+
+
+
+
+
+.modal-feedback,
+.map {
+  display: none;
+}
+
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 24px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+
+  background: rgb(234, 255, 45);
+}
+
+.main-header::before {
+  content: ".main-header";
+}
+
+.container::before {
+  content: ".container";
+}
+
+.main-header .container::before {
+  top: auto;
+  bottom: -28px;
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.index-logo::before {
+  content: ".index-logo";
+}
+
+.features::before {
+  content: ".features";
+  top: -28px;
+}
+
+.features-item::before {
+  content: ".features-item";
+}
+
+.index-content::before {
+  content: ".index-content";
+}
+
+.index-content-left::before {
+  content: ".index-content-left";
+  left: auto;
+  right: 0;
+}
+
+.index-content-right::before {
+  content: ".index-content-right";
+  left: auto;
+  right: 0;
+}
+
+.main-footer::before {
+  content: ".main-footer";
+}
+
+.main-footer .container::before {
+  top: -28px;
+}
+
+.footer-contacts::before {
+  content: ".footer-contacts";
+}
+
+.footer-social::before {
+  content: ".footer-social";
+}
+
+.footer-copyright::before {
+  content: ".footer-copyright";
+}
