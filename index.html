@@ -11,9 +11,9 @@
     <header class="main-header">
       <div class="store-navigation">
         <div class="header-logo">Техномарт</div>
-        <form action="index.html" method="post">
-          <input type="search" name="search" id="search-field">
-          <label for="search-field">Поиск</label>
+        <form class="search-form" action="index.html" method="post">
+          <input class="search" type="search" name="search" id="search-field">
+          <label class="search-label" for="search-field">Поиск:</label>
         </form>
         <div class="store-menu">
           <a class="navigation-icon bookmark-icon" href="#">Закладки: 0</a>
@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="store-info">
-        <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="header-text">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
         <div class="header-contacts">
           <p class="contact-tel">+7 (812) 555-05-55</p>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="login">Войти</div>
-        <div class="registration">Регистрация</div>
+        <a class="login">Войти</a>
+        <a class="registration">Регистрация</a>
       </div>
       
       <nav class="main-navigation">
@@ -60,26 +60,26 @@
     
     <main>
       <section class="promo clearfix">
-        <div class="promo-item">
+        <div class="promo-item materials">
           <h2 class="promo-title">Материалы</h2>
-          <a class="btn" href="#">На любой вкус</a>
+          <a class="btn-promo" href="#">На любой вкус</a>
         </div>
-        <div class="promo-item">
-          <h2>Инструмент</h2>
-          <a class="btn" href="">На все случаи</a>
+        <div class="promo-item instruments">
+          <h2 class="promo-title">Инструмент</h2>
+          <a class="btn-promo" href="">На все случаи</a>
         </div>
-        <div class="promo-item">
-          <h2>Техника</h2>
-          <a class="btn" href="">Для стройки</a>
+        <div class="promo-item technics">
+          <h2 class="promo-title">Техника</h2>
+          <a class="btn-promo" href="">Для стройки</a>
         </div>
-        
+                
+        <input type="radio" name="toggle" id="btn-1" checked>
+        <input type="radio" name="toggle" id="btn-2">
         <div class="slider">
-          <a class="prev">Назад</a>
-          <a class="next">Вперед</a>
-          <input type="radio" name="toggle" id="btn-1">
-          <input type="radio" name="toggle" id="btn-2">
+          <a class="prev" href="#">Назад</a>
+          <a class="next" href="#">Вперед</a>
           
-          <section class="slider-control">
+          <section class="slider-controls">
             <label for="btn-1"></label>
             <label for="btn-2"></label>
           </section>
@@ -89,7 +89,7 @@
               <h2 class="slider-title">Перфораторы</h2>
               <p class="slider-text">Настоящие мужские игрушки</p>
             </div>
-            <a class="btn" href="#">Открыть каталог</a>
+            <a class="btn btn-slider" href="#">Открыть каталог</a>
           </section>
           
           <section class="slide slide-2">
@@ -97,27 +97,27 @@
               <h2 class="slider-title">Дрели</h2>
               <p class="slider-text">Соседям на радость</p>              
             </div>
-            <a class="btn" href="#">Открыть каталог</a>
+            <a class="btn btn-slider" href="#">Открыть каталог</a>
           </section>          
         </div>
         
-        <div class="promo-item">
-          <h2>Скидка 50%</h2>
-          <a class="btn" href="">На 350 товаров</a>
+        <div class="promo-item discount">
+          <h2 class="promo-title">Скидка 50%</h2>
+          <a class="btn-promo" href="">На 350 товаров</a>
         </div>
-        <div class="promo-item">
-          <h2>Доставка</h2>
-          <a class="btn" href="">Бесплатно</a>
+        <div class="promo-item delivery">
+          <h2 class="promo-title">Доставка</h2>
+          <a class="btn-promo" href="">Бесплатно</a>
         </div>
       </section>
       
       <section class="catalog-popular">
         <div class="popular-header">
           <h2 class="subtitle">Популярные товары:</h2>
-          <a class="btn-popular">Все популярные товары</a>
+          <a class=" btn btn-popular" href="#">Все популярные товары</a>
         </div>
         <article class="catalog-item">
-          <img src="" alt="Перфоратор Bosch BFG 9000">
+          <img src="img/bfg-9000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
           <div class="over-block">
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
@@ -128,7 +128,7 @@
         </article>
         
         <article class="catalog-item">
-          <img src="" alt="Перфоратор Bosch BFG 3000">
+          <img src="img/bfg-3000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
           <div class="over-block">
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
@@ -139,7 +139,7 @@
         </article>
         
         <article class="catalog-item">
-          <img src="" alt="Перфоратор Bosch BFG 6000">
+          <img src="img/bfg-6000.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
           <div class="over-block">
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
@@ -150,7 +150,7 @@
         </article>
         
         <article class="catalog-item new-icon">
-          <img src="" alt="Перфоратор Bosch BFG 2000">
+          <img src="img/bfg-2000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
           <div class="over-block">
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
