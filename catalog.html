@@ -92,13 +92,11 @@
             <div class="price-range-high"></div>
           </div>
           <div class="price-control">
-            <label for="min-price-field">От</label>
-            <input type="text" name="min-price" id="min-price-field" value="0">
-            <label class="max-price-field">До</label>
-            <input type="text" name="max-price" id="max-price-field"  value="30 000">
-          </div
+            <input class="price-field" type="text" name="min-price" id="min-price-field" value="0">
+            <input class="price-field" type="text" name="max-price" id="max-price-field"  value="30000">
+          </div>
         </section>
-        <sectiom class="filter-group">
+        <section class="filter-group filter-manufacturer">
           <h3 class="filter-group-title">Производители:</h3>
           <p class="check-wrap">
             <input type="checkbox" name="bosch" id="bosch-field" checked>
@@ -124,11 +122,11 @@
         <section class="power">
           <h3 class="filter-group-title">Питание:</h3>
           <p class="check-wrap">  
-            <input type="radio" name="Accumulator" id="Accumulator-field" checked>
+            <input type="radio" name="power" id="Accumulator-field" checked>
             <label for="Accumulator-field">Аккумуляторное</label>
           </p>
           <p class="check-wrap">  
-            <input type="radio" name="Mains" id="Mains-field">
+            <input type="radio" name="power" id="Mains-field">
             <label for="Mains-field">Сетевое</label>
           </p>
         </section>
@@ -137,13 +135,13 @@
       
       <div class="right-column">
         <section class="sorting">
-          <span class="sorting-text">Сортировать:</span>
+          <span class="sorting-text">Сортировка:</span>
           <ul class="sorting-list">
-            <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
+            <li class="sort-item"><a class="sort-link active" href="#">По цене</a></li>
             <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
-            <li class="sort-item"><a class="sort-link" href="#">По названию</a></li>
-            <li class="sort-item"><a class="sort-link sort-increase" href="#">По возрастанию</a></li>
-            <li class="sort-item"><a class="sort-link sort-decrease" href="#">По убыванию</a></li>
+            <li class="sort-item"><a class="sort-link" href="#">По функционалу</a></li>
+            <li class="sort-item sort-increase"><a class="sort-link active" href="#">По возрастанию</a></li>
+            <li class="sort-item sort-decrease"><a class="sort-link" href="#">По убыванию</a></li>
           </ul>
         </section>
         <section class="catalog">
@@ -153,7 +151,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 p.</p>
             <p class="new-price">15500 p.</p>
           </article>
@@ -164,7 +162,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 p.</p>
             <p class="new-price">25500 p.</p>
           </article>
@@ -175,7 +173,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h3>
             <p class="new-price">12500 p.</p>
           </article>
           
@@ -185,7 +183,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 p.</p>
             <p class="new-price">15500 p.</p>
           </article>
@@ -196,7 +194,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 p.</p>
             <p class="new-price">25500 p.</p>
           </article>
@@ -207,7 +205,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h3>
             <p class="new-price">12500 p.</p>
           </article>
           
@@ -217,7 +215,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 p.</p>
             <p class="new-price">15500 p.</p>
           </article>
@@ -228,7 +226,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 p.</p>
             <p class="new-price">25500 p.</p>
           </article>
@@ -239,7 +237,7 @@
               <a class="buy" href="#">Купить</a>
               <a class="bookmark" href="#">В закладки</a>
             </div>
-            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h2>
+            <h3 class="name-item">Перфоратор BOSCH BFG 2000</h3>
             <p class="new-price">12500 p.</p>
           </article>
         </section>
@@ -247,7 +245,7 @@
           <a class="current">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
-          <a class="next" href="#">Следующая</a>
+          <a class="next-page" href="#">Следующая</a>
         </div>
       </div>
     </main>

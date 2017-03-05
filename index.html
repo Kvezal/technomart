@@ -123,7 +123,7 @@
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
           </div>
-          <h3 class="name-item">Перфоратор BOSCH BFG 9000</h2>
+          <h3 class="name-item">Перфоратор BOSCH BFG 9000</h3>
           <p class="old-price">32500 p.</p>
           <p class="new-price">25500 p.</p>
         </article>
@@ -134,7 +134,7 @@
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
           </div>
-          <h3 class="name-item">Перфоратор BOSCH BFG 3000</h2>
+          <h3 class="name-item">Перфоратор BOSCH BFG 3000</h3>
           <p class="old-price">22500 p.</p>
           <p class="new-price">15500 p.</p>
         </article>
@@ -145,7 +145,7 @@
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
           </div>
-          <h3 class="name-item">Перфоратор BOSCH BFG 6000</h2>
+          <h3 class="name-item">Перфоратор BOSCH BFG 6000</h3>
           <p class="old-price">30500 p.</p>
           <p class="new-price">25500 p.</p>
         </article>
@@ -156,7 +156,7 @@
             <a class="buy" href="#">Купить</a>
             <a class="bookmark" href="#">В закладки</a>
           </div>
-          <h3 class="name-item">Перфоратор BOSCH BFG 2000</h2>
+          <h3 class="name-item">Перфоратор BOSCH BFG 2000</h3>
           <p class="new-price">12500 p.</p>
         </article>
       </section>
@@ -269,7 +269,7 @@
           <p class="contact-text">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <img src="img/min-map.jpg" width="300" height="158" alt="Карта">
+          <a class="btn-map" href="#"><img src="img/min-map.jpg" width="300" height="158" alt="Карта"></a>
           <a class="btn btn-contact" href="#">Заблудились? Напишите нам!</a>
         </section>
       </section>
@@ -343,21 +343,25 @@
       <button class="close" type="button"></button>
     </div>
     
-    <form class="modal-feedback">
+    <div class="overlay">
+      
+    </div>
+    
+    <form class="modal-feedback" action="index.html">
       <button class="close" type="button"></button>
       <div class="wrapper-name">
         <label for="feedback-name-field">Ваше имя:</label>
-        <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Представьтесь, пожалуйста">
+        <input type="text" name="feedback-name" id="feedback-name-field" placeholder="Представьтесь, пожалуйста" required>
       </div>
       <div class="wrapper-email">
         <label for="feedback-email-field">Ваш e-mail:</label>
-        <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Для отправки ответа">
+        <input type="email" name="feedback-email" id="feedback-email-field" placeholder="Для отправки ответа" required>
       </div>
       <div class="wrapper-letter">    
         <label for="feedback-letter-field">Текст письма:</label>
-        <textarea name="feedback-letter" id="feedback-letter-field">В свободной форме</textarea>
+        <textarea name="feedback-letter" id="feedback-letter-field" placeholder="В свободной форме" required></textarea>
       </div>
-      <button class="btn button" type="button">Отправить</button>
+      <button class="btn bnt-feedback" type="submit">Отправить</button>
     </form>    
     
     <script src="js/scripts.js"></script>
