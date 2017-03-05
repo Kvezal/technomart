@@ -1,11 +1,46 @@
+var buy = document.querySelectorAll('.buy');
+var overlay = document.querySelector('.overlay');
+var modalCart= document.querySelector('.modal-cart');
+var closeModalCart = document.querySelector('.modal-cart .close')
+
 var open = document.querySelector('.btn-contact');
 var modal = document.querySelector('.modal-feedback');
-var close = modal.querySelector('.close');
-var overlay = document.querySelector('.overlay');
+var close = document.querySelector('.modal-feedback .close');
 
 var mapOpen = document.querySelector('.btn-map');
 var map = document.querySelector('.map');
-var mapClose = map.querySelector('.close');
+var mapClose = document.querySelector('.map .close');
+
+
+buy[0].addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.add('show');
+  overlay.classList.add('overlay-show');
+});
+
+buy[1].addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.add('show');
+  overlay.classList.add('overlay-show');
+});
+
+buy[2].addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.add('show');
+  overlay.classList.add('overlay-show');
+});
+
+closeModalCart.addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.remove('show');
+  overlay.classList.remove('overlay-show');
+})
+
+buy[3].addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.add('show');
+  overlay.classList.add('overlay-show');
+});
 
 open.addEventListener('click', function(event) {
   event.preventDefault();

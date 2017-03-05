@@ -1040,6 +1040,8 @@ input[name="toggle"] {
   background-image: linear-gradient(-135deg, #ffffff 14px, transparent 14px),
                     linear-gradient(-45deg, #ffffff 14px, transparent 14px);
   border-radius: 3px;
+  
+  cursor: pointer;
 }
 
 .manufacturers {
@@ -2149,19 +2151,20 @@ input[name="toggle-service"] {
   transition-duration: .5s;
 }
 
-.map .close {
+.map .close,
+.modal-cart .close {
   top: 14px;
 }
 
 .modal-feedback {
   position: fixed;
-  align-content: flex-start;
   top: 50%;
   left: 50%;
   z-index: 50;
   
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   box-sizing: border-box;
   width: 620px;
   height: 430px;
@@ -2170,7 +2173,7 @@ input[name="toggle-service"] {
   background-color: #ffffff;
   box-shadow: inset 0 7px #ee3643,
               inset 0 -112px #f1f1f1,
-              0 20px 40px rgba(0, 0, 0, .75);
+              0 20px 40px rgba(41, 52, 73, .75);
   transform: translate(-50%, -50%) scale(.001);
   visibility: hidden;
   opacity: 0;
@@ -2287,6 +2290,94 @@ input[name="toggle-service"] {
   border: none;
   border-radius: 5px;  
 }
+
+.modal-cart {  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  box-sizing: border-box;
+  width: 620px;
+  height: 283px;
+  padding: 50px 80px 28px;
+  
+  background-color: #ffffff;
+  box-shadow: inset 0 7px #ee3643,
+              inset 0 -112px #f1f1f1,
+              0 20px 40px rgba(41, 52, 73, .75);
+  transform: translate(-50%, -50%) scale(.001);
+  visibility: hidden;
+  opacity: 0;
+  
+  transition-duration: .6s;
+}
+
+.modal-cart .close {
+  top: 17px;
+}
+
+.modal-cart p {
+  position: relative;
+  
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 100px;
+  
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.icon-add::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  z-index: 100;
+  
+  display: block;
+  width: 66px;
+  height: 66px;
+  
+  background-color: red;
+  background: url(../img/sprites.png) no-repeat -250px -100px;
+}
+
+.btn-order {
+  width: 220px;
+  margin-top: 80px;
+}
+
+.continue {
+  width: 220px;
+  min-height: 38px;
+  margin-top: 80px;
+  margin-left: auto;
+  
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px; 
+  
+  transition-duration: .5s;
+}
+
+.continue:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.continue:active {
+  background-color: rgba(0, 0, 0, .3);
+}
+
 
 .show {
   transform: translate(-50%, -50%) scale(1);
