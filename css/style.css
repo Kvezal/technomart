@@ -240,7 +240,6 @@ body {
   background-color: #518534;
 }
 
-
 .store-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2545,7 +2544,6 @@ input[name="toggle-service"] {
 .continue:active {
   background-color: rgba(0, 0, 0, .3);
 }
-
 
 .show {
   -webkit-transform: translate(-50%, -50%) scale(1);
