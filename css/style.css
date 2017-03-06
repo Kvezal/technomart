@@ -83,7 +83,7 @@ body {
   background-color: #293449;
   border: none;
   
-  transition-duration: .5s
+  transition-duration: .5s;
 }
 
 .search:hover {
@@ -162,8 +162,8 @@ body {
   min-height: 42px;
   padding-top: 12px;
   
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
   
   transition-duration: .3s;
 }
@@ -184,8 +184,7 @@ body {
 
 .navigation-icon::before {
   content: "";
-  position: absolute;
-  
+  position: absolute;  
   top: 12px;
   left: 17px;
   
@@ -393,12 +392,11 @@ body {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
-  
-  font-size: 17px;
-  line-height: 17px;
+  padding: 0;  
   
   list-style: none;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .nav-item {
@@ -525,7 +523,7 @@ body {
   background: url(../img/sprites.png) no-repeat -200px -50px;
   opacity: 0;
   
-  transition: .3s;
+  transition-duration: .3s;
 }
 
 .logout:hover.logout::after {
@@ -536,6 +534,7 @@ body {
   position: relative;
   
   margin: 8px 14px 0 18px;
+  
   font-size: 16px;
   line-height: 16px;
   color: #32425c;  
@@ -664,10 +663,9 @@ body {
 
 .slider::after {
   content: "";
-  
-  visibility: hidden;
-  
+    
   background: url(../img/slider2.jpg);
+  visibility: hidden;
 }
 
 .prev,
@@ -682,8 +680,8 @@ body {
   font-size: 0;
   
   border: 3px solid #ffffff;
-  border-bottom: none;
   border-right: none;
+  border-bottom: none;
   border-radius: 2px;
 } 
 
@@ -693,11 +691,13 @@ input[name="toggle"] {
 
 .prev {  
   left: 31px;
+  
   transform: rotate(-45deg);
 }
 
 .next {
   right: 25px;
+  
   transform: rotate(135deg);
 }
 
@@ -868,6 +868,7 @@ input[name="toggle"] {
   
   width: 60px;
   height: 59px;
+  
   background: url(../img/sprites.png) no-repeat 0 -100px;
   
 }
@@ -883,8 +884,7 @@ input[name="toggle"] {
   top: 50%;
   left: 50%;
   z-index: 5;
-  
-  
+    
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
@@ -995,9 +995,9 @@ input[name="toggle"] {
 }
 
 .name-item {
+  width: 180px;
   margin: 0;
   margin-top: 11px;
-  width: 180px;
   
   font-weight: 700;
   font-size: 18px;
@@ -1039,15 +1039,14 @@ input[name="toggle"] {
   background-color: #ee3643;
   background-image: linear-gradient(-135deg, #ffffff 14px, transparent 14px),
                     linear-gradient(-45deg, #ffffff 14px, transparent 14px);
-  border-radius: 3px;
-  
+  border-radius: 3px;  
   cursor: pointer;
 }
 
 .manufacturers {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 940px;
   margin: 20px auto 0;
 }
@@ -1117,8 +1116,8 @@ input[name="toggle-service"] {
 .wrapper {
   box-sizing: border-box;
   width: 400px;
-  padding-top: 60px;
   margin-bottom: 30px;
+  padding-top: 60px;
 }
 
 .services .subtitle {
@@ -1314,8 +1313,8 @@ input[name="toggle-service"] {
 
 .btn-feature {
   width: 220px;
-  padding-left: 40px;
   padding-right: 40px;
+  padding-left: 40px;
 }
 
 .contacts {
@@ -1376,8 +1375,7 @@ input[name="toggle-service"] {
   
   border: 1px solid #cdd1d8;
   border-bottom: none;
-  border-left: none;
-  
+  border-left: none;  
   transform: rotate(45deg);
 }
 
@@ -1394,12 +1392,11 @@ input[name="toggle-service"] {
   text-decoration: none;
 }
 
-.home-icon {
-  margin-top: 5px;
-  
+.home-icon {  
   display: block;
   width: 15px;
   height: 12px;
+  margin-top: 5px;
     
   font-size: 0;
   
@@ -1452,6 +1449,7 @@ input[name="toggle-service"] {
 
 .filter-group {
   padding-bottom: 24px;
+  
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1525,6 +1523,7 @@ input[name="toggle-service"] {
 
 .price-control {  
   position: relative;
+  
   font-size: 0;
 }
 
@@ -1569,6 +1568,7 @@ input[name="toggle-service"] {
 
 .check-wrap {
   position: relative;
+  
   margin-bottom: 16px;
 }
 
@@ -1636,7 +1636,7 @@ input[name="toggle-service"] {
   visibility: hidden;
   opacity: 0;
   
-  transition: .3s;
+  transition-duration: .3s;
   transition-property: opacity;
 }
 
@@ -1692,7 +1692,7 @@ input[name="toggle-service"] {
   
   border-radius: 50%;
   
-  transition: .3s;
+  transition-duration: .3s;
 }
 
 .power label::before {  
@@ -1722,10 +1722,9 @@ input[name="toggle-service"] {
   height: 9px;
   
   background-color: #c1c1c1;
-  visibility: hidden;
-  opacity: 0;
-  
   transform: scale(0.01);
+  visibility: hidden;
+  opacity: 0; 
 }
 
 .power label:hover::after {
@@ -1733,10 +1732,9 @@ input[name="toggle-service"] {
 }
 
 .power input:checked + label::after {
-  visibility: visible;
-  opacity: 1;
-  
   transform: scale(1);
+  visibility: visible;
+  opacity: 1;  
 }
 
 .power input:checked + label:active::after {
@@ -1844,7 +1842,7 @@ input[name="toggle-service"] {
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   
-  transition: .5s;
+  transition-duration: .5s;
 }
 
 .sort-increase .sort-link:hover,
@@ -2248,8 +2246,8 @@ input[name="toggle-service"] {
 .modal-feedback textarea {
   box-sizing: border-box;
   width: 100%;
-  padding-left: 14px;
   padding-right: 14px;
+  padding-left: 14px;
   
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -2342,7 +2340,6 @@ input[name="toggle-service"] {
   width: 66px;
   height: 66px;
   
-  background-color: red;
   background: url(../img/sprites.png) no-repeat -250px -100px;
 }
 
