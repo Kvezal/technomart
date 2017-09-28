@@ -10,42 +10,32 @@ var close = document.querySelector('.modal-feedback .close');
 var mapOpen = document.querySelector('.btn-map');
 var map = document.querySelector('.map');
 var mapClose = document.querySelector('.map .close');
+var i;
 
-
-buy[0].addEventListener('click', function(event) {
-  event.preventDefault();
-  modalCart.classList.add('show');
-  overlay.classList.add('overlay-show');
-});
-
-buy[1].addEventListener('click', function(event) {
-  event.preventDefault();
-  modalCart.classList.add('show');
-  overlay.classList.add('overlay-show');
-});
-
-buy[2].addEventListener('click', function(event) {
-  event.preventDefault();
-  modalCart.classList.add('show');
-  overlay.classList.add('overlay-show');
-});
-
-closeModalCart.addEventListener('click', function(event) {
-  event.preventDefault();
-  modalCart.classList.remove('show');
-  overlay.classList.remove('overlay-show');
-})
-
-buy[3].addEventListener('click', function(event) {
-  event.preventDefault();
-  modalCart.classList.add('show');
-  overlay.classList.add('overlay-show');
-});
+for(i = 0; i < buy.length; i++) {
+  buy[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    modalCart.classList.add('show');
+    overlay.classList.add('overlay-show');
+  });
+}
 
 open.addEventListener('click', function(event) {
   event.preventDefault();
   modal.classList.add('show');
   overlay.classList.add('overlay-show');
+})
+
+mapOpen.addEventListener('click', function(event) {
+  event.preventDefault();
+  map.classList.add('show');
+  overlay.classList.add('overlay-show');
+})
+
+closeModalCart.addEventListener('click', function(event) {
+  event.preventDefault();
+  modalCart.classList.remove('show');
+  overlay.classList.remove('overlay-show');
 })
 
 close.addEventListener('click', function(event) {
@@ -59,12 +49,6 @@ overlay.addEventListener('click', function(event) {
   modal.classList.remove('show');
   map.classList.remove('show');
   overlay.classList.remove('overlay-show');
-})
-
-mapOpen.addEventListener('click', function(event) {
-  event.preventDefault();
-  map.classList.add('show');
-  overlay.classList.add('overlay-show');
 })
 
 mapClose.addEventListener('click', function(event) {
